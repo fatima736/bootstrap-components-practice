@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Components</title>
+    <!-- css links  -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Accordion start -->
+    <div class="container">
+        <div class="accordion">
+            <div class="accordion-item">
+                <h2 class="accordion-button" data-bs-target="#item1" data-bs-toggle="collapse">Question 1</h2>
+                <div class="accordion-collapse collapse show" id="item1">
+                    <div class="accordion-body">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde expedita magni aperiam. Eius numquam nulla unde excepturi quia provident ipsum! Quo quasi a iste et.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-button" data-bs-target="#item2" data-bs-toggle="collapse">Question 1</h2>
+                <div class="accordion-collapse collapse" id="item2">
+                    <div class="accordion-body">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde expedita magni aperiam. Eius numquam nulla unde excepturi quia provident ipsum! Quo quasi a iste et.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-button" data-bs-target="#item3" data-bs-toggle="collapse">Question 1</h2>
+                <div class="accordion-collapse collapse" id="item3">
+                    <div class="accordion-body">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde expedita magni aperiam. Eius numquam nulla unde excepturi quia provident ipsum! Quo quasi a iste et.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Accordion end -->
+
+    <!-- Alert start -->
+    <div class="container py-5">
+
+        <div class="alert alert-primary" role="alert">
+            Alert Message
+        </div>
+
+        <div class="alert alert-danger alert-dismissible fade show" role="alert">
+            <strong>Error Message!</strong> You should check in on some of those fields below.
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+          </div>
+          </div>
+    </div>
+    <!-- Alert end -->
+
+    <!-- Badge start  -->
+    <div class="container py-5">
+        <button type="button" class="btn btn-success position-relative">
+            Message
+            <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                23+
+                <span class="visually-hidden">Unread Messages</span>
+            </span>
+        </button>
+
+        <button type="button" class="btn btn-warning">
+           Friend Requests <span class="badge text-bg-secondary">10</span>
+          </button>
+    </div>
+    <!-- Badge end -->
+
+    <!-- Breadcrumb start  -->
+    <div class="container">
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item">Home</li>
+        <li class="breadcrumb-item active">List Items</li>
+    </ol>
+    <!-- Breadcrumb end  -->
+
+    <!-- Buttons start-->
+    <button type="button" class="btn btn-success">Subscribe</button>
+    <button type="button" class="btn btn-outline-primary">Like</button>
+    <button class="btn btn-success btn-lg">Large Button</button>
+    <br>
+    <!-- Buttons end -->
+
+    <!-- Buttongroup start  -->
+    <div class="btn-group" role="group" aria-label="Basic example">
+        <button type="button" class="btn btn-success">Item1</button>
+        <button type="button" class="btn btn-primary">Item2</button>
+        <button type="button" class="btn btn-info">Item3</button>
+      </div>
+      <br>
+      <br>
+
+      <div class="btn-group">
+        <a href="#" class="btn btn-outline-secondary active" aria-current="page">Active link</a>
+        <a href="#" class="btn btn-outline-secondary">Link</a>
+        <a href="#" class="btn btn-outline-secondary">Link</a>
+      </div>
+      <button class="btn-toolbar">
+        <div class="btn-group">
+        <button type="button" class="btn btn-success">1</button>
+        <button type="button" class="btn btn-primary">2</button>
+        <button type="button" class="btn btn-info">3</button>
+       </div>
+      </button>
+      <!-- Buttongroup end -->
+
+      <!-- Card start  -->
+      <div class="card" style="width:18rem;">
+        <img src="img/pic1.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        </div>
+      </div>
+      <br>
+      <div class="card mb-3" style="max-width: 540px;">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img src="img/pic2.jpg" class="img-fluid rounded-start" alt="...">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- card end  -->
+
+      <!-- Carousel start  -->
+      <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="img/pic3.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>First slide item</h5>
+              <p>Some representative placeholder content for the first slide.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="img/pic2.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Second slide item</h5>
+              <p>Some representative placeholder content for the second slide.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="img/pic3.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Third slide item</h5>
+              <p>Some representative placeholder content for the third slide.</p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <!-- Carousel end -->
+
+      <!-- Close button start  -->
+      <button type="button" class="btn-close bg-dark w-100 my-5" aria-label="close"></button>
+      <button type="button" class="btn-close" aria-label="Close"></button>
+      <button type="button" class="btn-close disabled" disabled aria-label="Close"></button>
+      <!-- Close button end -->
+
+      <!-- Collapse start  -->
+      <div class="container">
+      <p>
+        <a class="btn btn-primary" data-bs-toggle="collapse show" href="#item1" role="button" aria-expanded="true" aria-controls="item1">
+         Lorem, ipsum dolor.
+        </a>
+        <button class="btn btn-primary" type="button" data-bs-toggle="collapse show" data-bs-target="#item1" aria-expanded="true" aria-controls="item1">
+          Button with data-bs-target
+        </button>
+      </p>
+      <div class="collapse" id="item1">
+        <div class="card card-body">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Assumenda nihil itaque error rem provident minima voluptates quo perspiciatis ut. Repellat quam fuga eaque placeat eligendi accusantium. Tenetur, maxime nostrum. Soluta!
+      </div>
+
+    </div>
+    <!-- collapse end  -->
+
+    <!-- Dropdown start  -->
+    <div class="dropdown">
+      <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Home</button>
+      <ul class="dropdown-menu">
+        <li><a class="dropdown-item" href="#">About</a></li>
+        <li><a class="dropdown-item" href="#">Contact</a></li>
+        <li><a class="dropdown-item" href="#">Information</a></li>
+      </ul>
+    </div>
+    <!-- dropdown end  -->
+
+    <!-- Listgruop start  -->
+    <ul class="list-group">
+      <li class="list-group-item active" aria-current="true">Active list</li>
+      <li class="list-group-item">List1</li>
+      <li class="list-group-item">List2</li>
+      <li class="list-group-item">List3</li>
+      <li class="list-group-item">List4</li>
+    </ul>
+    <!-- listgroup end -->
+
+    <!-- Modal start  -->
+    <button type="button" class="btn btn-success my-5" data-bs-target="#modal-1" data-bs-toggle="modal">
+      Modal
+    </button>
+    <!-- Modal  -->
+    <div class="modal fade" id="modal-1" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="modalBackdrop" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="modalBackdrop">Meta Tag</h5>
+            <button class="btn-close" data-bs-dismiss="modal" aria-label="close"></button>
+          </div>
+          <div class="modal-body">
+            <p>Meta tags are areas in HTML code that contain information about a website. The information cannot be seen on the website itself. Search engines access certain meta tags so they can, for instance, display a page title and description in the search results.</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-outline-success">Ok</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal end  -->
+    
+    <!-- Navbar start  -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+      <div class="container-fluid">
+      <a href="#" class="navbar-brand text-warning">SSB456</a>
+      <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarElement1" aria-controls="navbarElement1" aria-expanded="true" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarElement1">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a href="#" class="nav-link text-light">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link text-light">About</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link text-light">Query</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link text-light">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    </nav>
+    <br> 
+    <br>
+    <nav class="navbar navbar-expand-lg navbar-light bg-primary">
+      <div class="container-fluid">
+      <a href="#" class="navbar-brand text-warning">SSB456</a>
+      <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarElement" aria-controls="navbarElement" aria-expanded="true" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarElement">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a href="#" class="nav-link text-light">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link text-light">About</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link text-light">Query</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link text-light">Contact</a>
+          </li>
+        </ul>
+        <form action="" class="d-flex">
+          <input type="search" class="form-control me-2" placeholder="Search" aria-label="search">
+          <button type="submit" class="btn btn-secondary">Search</button>
+        </form>
+      </div>
+    </div>
+    </nav>
+    <!-- Navbar end  -->
+
+    <!-- Navs & tabs start  -->
+    <div class="container my-5">
+    <ul class="nav nav-tabs" id="myTab" role="tablist">
+      <li class="nav-item" role="presentation">
+        <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">Home</button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false">Profile</button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact-tab-pane" type="button" role="tab" aria-controls="contact-tab-pane" aria-selected="false">Contact</button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="disabled-tab" data-bs-toggle="tab" data-bs-target="#disabled-tab-pane" type="button" role="tab" aria-controls="disabled-tab-pane" aria-selected="false" disabled>Disabled</button>
+      </li>
+    </ul>
+    <div class="tab-content" id="myTabContent">
+      <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam labore sint suscipit, saepe repudiandae est ipsum autem aspernatur? Eos, corrupti?</div>
+      <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta impedit architecto accusantium consequuntur iusto at vel fuga suscipit reiciendis id?</div>
+      <div class="tab-pane fade" id="contact-tab-pane" role="tabpanel" aria-labelledby="contact-tab" tabindex="0">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus sed reprehenderit inventore dolor molestiae mollitia!</div>
+      <div class="tab-pane fade" id="disabled-tab-pane" role="tabpanel" aria-labelledby="disabled-tab" tabindex="0"></div>
+    </div>
+  </div>
+  <!-- Navs & tabs end  -->
+
+  <!-- Scrollspy start  -->
+  <nav id="navbar-example2" class="navbar bg-light px-3 mb-3">
+    <a class="navbar-brand" href="#">Navbar</a>
+    
+    <ul class="nav nav-pills">
+      <li class="nav-item">
+        <a class="nav-link" href="#scrollspyHeading1">First</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#scrollspyHeading2">Second</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Dropdown</a>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="#scrollspyHeading3">Third</a></li>
+          <li><a class="dropdown-item" href="#scrollspyHeading4">Fourth</a></li>
+          <li><hr class="dropdown-divider"></li>
+          <li><a class="dropdown-item" href="#scrollspyHeading5">Fifth</a></li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
+  <div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true" class="scrollspy-example bg-light p-3 rounded-2" tabindex="0">
+    <h4 id="scrollspyHeading1">Lorem1</h4>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis culpa illo modi nihil expedita? Vitae soluta esse animi numquam sapiente ex, odit earum veniam iusto!</p>
+    <h4 id="scrollspyHeading2">Lorem2</h4>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis culpa illo modi nihil expedita? Vitae soluta esse animi numquam sapiente ex, odit earum veniam iusto!</p>
+    <h4 id="scrollspyHeading3">Lorem3</h4>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis culpa illo modi nihil expedita? Vitae soluta esse animi numquam sapiente ex, odit earum veniam iusto!</p>
+    <h4 id="scrollspyHeading4">Lorem4</h4>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis culpa illo modi nihil expedita? Vitae soluta esse animi numquam sapiente ex, odit earum veniam iusto!</p>
+    <h4 id="scrollspyHeading5">Lorem5</h4>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis culpa illo modi nihil expedita? Vitae soluta esse animi numquam sapiente ex, odit earum veniam iusto!</p>
+  </div>
+  <!-- Scrollspy end  -->
+
+  <!-- Spinners start  -->
+  <div class="spinner-border" role="status">
+    <span  class="visually-hidden">Loading...</span>
+  </div>
+  <div>Loading..
+    <div class="spinner-border text-danger" role="status">
+      <span  class="visually-hidden">Loading...</span>
+    </div>
+  </div>
+  <div class="spinner-grow text-success my-5">
+    <span class="visually-hidden">Loading..</span>
+  </div>
+  <!-- Spinners end  -->
+
+  <!-- Tooltips start  -->
+  <button type="button" class="btn btn-danger"
+        data-bs-toggle="tooltip" data-bs-placement="top"
+        data-bs-custom-class="custom-tooltip"
+        data-bs-title="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus sed reprehenderit inventore dolor.">
+  Tooltip
+</button>
+  <!-- Tooltips end  -->
+
+
+
+
+    <!-- javascript links  -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
